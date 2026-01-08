@@ -2,6 +2,7 @@
 
 :root {
   --background: #ffffff;
+  --background_2: #dcdfd5;
   --foreground: #171717;
 }
 
@@ -21,6 +22,8 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  font-family: "Open Sans";
 }
