@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JBOI 2026 - Judo Bosnia Open International",
-  description: "Official website for the 2026 Judo Bosnia Open International tournament in Sarajevo",
+  title: "JBOI 2026 - Junior Balkan Olympiad in Informatics",
+  description: "Official website for the 2026 Junior Balkan Olympiad in Informatics in Sarajevo",
 };
 
 export default function RootLayout({

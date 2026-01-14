@@ -27,7 +27,7 @@ export default function ContactPage() {
                                                 <h3 className="font-bold text-gray-900 text-xl mb-2">Email</h3>
                                                 <p className="text-gray-700 mb-1">General inquiries:</p>
                                                 <a href="mailto:info@jboi2026.ba" className="text-green-600 hover:text-green-700 font-medium">info@jboi2026.ba</a>
-                                                <p className="text-gray-700 mb-1 mt-3">Registration:</p>
+                                                <p className="text-gray-700 mb-1 mt-3">Team registration:</p>
                                                 <a href="mailto:registration@jboi2026.ba" className="text-green-600 hover:text-green-700 font-medium">registration@jboi2026.ba</a>
                                             </div>
                                         </div>
@@ -55,8 +55,8 @@ export default function ContactPage() {
                                             </div>
                                             <div>
                                                 <h3 className="font-bold text-gray-900 text-xl mb-2">Office Address</h3>
-                                                <p className="text-gray-700">Judo Federation of Bosnia and Herzegovina</p>
-                                                <p className="text-gray-700">Branilaca Sarajeva 24</p>
+                                                <p className="text-gray-700">Faculty of Electrical Engineering</p>
+                                                <p className="text-gray-700">Zmaja od Bosne bb</p>
                                                 <p className="text-gray-700">71000 Sarajevo</p>
                                                 <p className="text-gray-700">Bosnia and Herzegovina</p>
                                             </div>

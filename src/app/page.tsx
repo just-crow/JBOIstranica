@@ -17,7 +17,7 @@ export default function Home() {
                 </div>
               </div>
               <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
-                Judo Bosnia Open International 2026
+                Junior Balkan Olympiad in Informatics 2026
               </h1>
               <p className="text-3xl text-gray-200 mb-4">June 14-16, 2026</p>
               <p className="text-2xl text-gray-300 mb-12">Sarajevo, Bosnia and Herzegovina</p>
@@ -40,7 +40,7 @@ export default function Home() {
                 <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-blue-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
                   <div className="text-6xl mb-6">📅</div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Schedule</h3>
-                  <p className="text-gray-600">View the tournament program</p>
+                  <p className="text-gray-600">View the competition program</p>
                 </div>
               </Link>
 
@@ -48,14 +48,14 @@ export default function Home() {
                 <div className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-green-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
                   <div className="text-6xl mb-6">👥</div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Participants</h3>
-                  <p className="text-gray-600">Competing teams and athletes</p>
+                  <p className="text-gray-600">Competing teams</p>
                 </div>
               </Link>
 
               <Link href="/rules" className="group">
                 <div className="bg-gradient-to-br from-red-50 to-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-red-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
                   <div className="text-6xl mb-6">📋</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Rules</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Contest Rules</h3>
                   <p className="text-gray-600">Competition regulations</p>
                 </div>
               </Link>
@@ -76,9 +76,9 @@ export default function Home() {
             <h2 className="text-5xl font-bold text-gray-900 mb-6">About JBOI</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              The Judo Bosnia Open International is a premier international judo competition, bringing together talented athletes
-              from across Europe and beyond. This championship serves as a significant milestone in the development of young judokas,
-              providing them with invaluable competitive experience on an international stage.
+              The Junior Balkan Olympiad in Informatics is a premier programming competition for talented young students
+              from the Balkan region. This olympiad serves as a significant milestone in the development of young computer scientists,
+              providing them with invaluable competitive experience in algorithmic problem solving.
             </p>
             <Link href="/about" className="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
               Read More
@@ -92,7 +92,7 @@ export default function Home() {
               <div>
                 <h3 className="text-white font-bold text-xl mb-4">JBOI 2026</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Judo Bosnia Open International Championship - June 14-16, 2026, Sarajevo
+                  Junior Balkan Olympiad in Informatics - June 14-16, 2026, Sarajevo
                 </p>
               </div>
               <div>
@@ -101,7 +101,7 @@ export default function Home() {
                   <li><Link href="/about" className="hover:text-green-400 transition-colors">About</Link></li>
                   <li><Link href="/schedule" className="hover:text-green-400 transition-colors">Schedule</Link></li>
                   <li><Link href="/participants" className="hover:text-green-400 transition-colors">Participants</Link></li>
-                  <li><Link href="/rules" className="hover:text-green-400 transition-colors">Rules</Link></li>
+                  <li><Link href="/rules" className="hover:text-green-400 transition-colors">Contest Rules</Link></li>
                   <li><Link href="/venue" className="hover:text-green-400 transition-colors">Venue</Link></li>
                   <li><Link href="/contact" className="hover:text-green-400 transition-colors">Contact</Link></li>
                 </ul>
@@ -116,7 +116,7 @@ export default function Home() {
               </div>
             </div>
             <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
-              <p>&copy; 2026 JBOI - Judo Bosnia Open International. All rights reserved.</p>
+              <p>&copy; 2026 JBOI - Junior Balkan Olympiad in Informatics. All rights reserved.</p>
             </div>
           </div>
         </footer>
