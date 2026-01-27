@@ -20,7 +20,6 @@ export default function SchedulePage() {
                                     <h2 className="text-4xl font-bold text-gray-900">Friday, June 14, 2026</h2>
                                     <span className="bg-green-500 text-white px-6 py-2 rounded-full font-semibold text-lg">Day 1</span>
                                 </div>
-
                             </div>
 
                             <div className="bg-white rounded-2xl p-10 shadow-xl border-l-4 border-blue-500">
@@ -28,7 +27,6 @@ export default function SchedulePage() {
                                     <h2 className="text-4xl font-bold text-gray-900">Saturday, June 15, 2026</h2>
                                     <span className="bg-blue-500 text-white px-6 py-2 rounded-full font-semibold text-lg">Day 2</span>
                                 </div>
-
                             </div>
 
                             <div className="bg-white rounded-2xl p-10 shadow-xl border-l-4 border-yellow-500">
@@ -36,7 +34,6 @@ export default function SchedulePage() {
                                     <h2 className="text-4xl font-bold text-gray-900">Sunday, June 16, 2026</h2>
                                     <span className="bg-yellow-500 text-white px-6 py-2 rounded-full font-semibold text-lg">Day 3</span>
                                 </div>
-
                             </div>
                         </div>
                     </div>
