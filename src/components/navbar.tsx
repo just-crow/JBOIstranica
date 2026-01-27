@@ -15,10 +15,8 @@ export default function Navbar() {
                     <Link href="/schedule" className="hover:text-green-400 transition-colors">Schedule</Link>
                     <Link href="/participants" className="hover:text-green-400 transition-colors">Participants</Link>
                     <Link href="/rules" className="hover:text-green-400 transition-colors">Rules</Link>
-                    <Link href="/venue" className="hover:text-green-400 transition-colors">Venue</Link>
-                    <Link href="/contact" className="hover:text-green-400 transition-colors">Contact</Link>
                 </nav>
-            </div>
+            </div >
             <div className="mt-[10vh]"></div>
         </>
     )

@@ -12,8 +12,8 @@ export default function Home() {
           <div className="relative z-10 h-full flex flex-col justify-center items-center px-8 text-center">
             <div className="max-w-5xl">
               <div className="mb-8">
-                <div className="inline-block bg-gradient-to-br from-green-500 to-green-700 p-6 rounded-3xl mb-8">
-                  <span className="text-white text-7xl font-bold">JBOI</span>
+                <div className="inline-block bg-gradient-to-br from-yellow-400 from-0% via-white via-50% to-blue-600 to-100% p-6 rounded-3xl mb-8">
+                  <span className="text-[#36454F] text-7xl font-bold">JBOI</span>
                 </div>
               </div>
               <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
@@ -35,38 +35,29 @@ export default function Home() {
 
         <section className="py-24 bg-white">
           <div className="max-w-7xl mx-auto px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Link href="/schedule" className="group">
-                <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-blue-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
-                  <div className="text-6xl mb-6">📅</div>
+                <div className="bg-gradient-to-br rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-blue-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Schedule</h3>
                   <p className="text-gray-600">View the competition program</p>
                 </div>
               </Link>
 
               <Link href="/participants" className="group">
-                <div className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-green-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
-                  <div className="text-6xl mb-6">👥</div>
+                <div className="bg-gradient-to-br rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-green-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Participants</h3>
                   <p className="text-gray-600">Competing teams</p>
                 </div>
               </Link>
 
               <Link href="/rules" className="group">
-                <div className="bg-gradient-to-br from-red-50 to-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-red-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
-                  <div className="text-6xl mb-6">📋</div>
+                <div className="bg-gradient-to-br rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-red-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">Contest Rules</h3>
                   <p className="text-gray-600">Competition regulations</p>
                 </div>
               </Link>
 
-              <Link href="/venue" className="group">
-                <div className="bg-gradient-to-br from-purple-50 to-white rounded-2xl p-10 shadow-lg hover:shadow-2xl transition-all border border-purple-100 text-center h-full flex flex-col items-center justify-center group-hover:scale-105 transform duration-300">
-                  <div className="text-6xl mb-6">📍</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">Venue</h3>
-                  <p className="text-gray-600">Location and facilities</p>
-                </div>
-              </Link>
+
             </div>
           </div>
         </section>
@@ -76,9 +67,7 @@ export default function Home() {
             <h2 className="text-5xl font-bold text-gray-900 mb-6">About JBOI</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-green-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              The Junior Balkan Olympiad in Informatics is a premier programming competition for talented young students
-              from the Balkan region. This olympiad serves as a significant milestone in the development of young computer scientists,
-              providing them with invaluable competitive experience in algorithmic problem solving.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
             <Link href="/about" className="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
               Read More
@@ -86,40 +75,7 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="bg-gray-900 text-gray-300 py-16">
-          <div className="max-w-6xl mx-auto px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-              <div>
-                <h3 className="text-white font-bold text-xl mb-4">JBOI 2026</h3>
-                <p className="text-gray-400 leading-relaxed">
-                  Junior Balkan Olympiad in Informatics - June 14-16, 2026, Sarajevo
-                </p>
-              </div>
-              <div>
-                <h3 className="text-white font-bold text-xl mb-4">Quick Links</h3>
-                <ul className="space-y-3">
-                  <li><Link href="/about" className="hover:text-green-400 transition-colors">About</Link></li>
-                  <li><Link href="/schedule" className="hover:text-green-400 transition-colors">Schedule</Link></li>
-                  <li><Link href="/participants" className="hover:text-green-400 transition-colors">Participants</Link></li>
-                  <li><Link href="/rules" className="hover:text-green-400 transition-colors">Contest Rules</Link></li>
-                  <li><Link href="/venue" className="hover:text-green-400 transition-colors">Venue</Link></li>
-                  <li><Link href="/contact" className="hover:text-green-400 transition-colors">Contact</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-white font-bold text-xl mb-4">Contact</h3>
-                <ul className="space-y-3 text-gray-400">
-                  <li>📧 info@jboi2026.ba</li>
-                  <li>📱 +387 33 123 456</li>
-                  <li>📍 Sarajevo, Bosnia and Herzegovina</li>
-                </ul>
-              </div>
-            </div>
-            <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
-              <p>&copy; 2026 JBOI - Junior Balkan Olympiad in Informatics. All rights reserved.</p>
-            </div>
-          </div>
-        </footer>
+
 
       </main>
     </>
