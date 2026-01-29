@@ -19,7 +19,7 @@ export default function Home() {
               <h1 className="text-6xl md:text-7xl font-bold text-white mb-6">
                 Junior Balkan Olympiad in Informatics 2026
               </h1>
-              <p className="text-3xl text-gray-200 mb-4">June 14-16, 2026</p>
+              <p className="text-3xl text-gray-200 mb-4">September 21-23, 2026</p>
               <p className="text-2xl text-gray-300 mb-12">Sarajevo, Bosnia and Herzegovina</p>
               <div className="flex gap-6 justify-center">
                 <Link href="/schedule" className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-10 py-5 rounded-xl font-semibold text-xl transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
