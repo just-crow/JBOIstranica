@@ -26,7 +26,7 @@
 }
 
 .font-pixel {
-  font-family: var(--font-pixel, Pixelify Sans);
+  font-family: var(--font-pixel, monospace);
 }
 
 body {
