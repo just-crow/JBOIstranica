@@ -1,34 +1,114 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --background_2: #f5f7f3;
-  --foreground: #171717;
-  --primary: #2d5016;
-  --primary-light: #4a7c2c;
-  --primary-dark: #1a3009;
-  --accent: #d4af37;
-  --accent-light: #f4d477;
-  --text-dark: #1a1a1a;
-  --text-light: #666666;
-  --border: #e0e0e0;
+  --background: #f8f9fc;
+  --foreground: #0a1628;
+  --navy: #0a1628;
+  --navy-light: #132240;
+  --jboi-blue: #0059d5;
+  --jboi-blue-light: #3a85e8;
+  --jboi-yellow: #fed841;
+  --jboi-yellow-light: #fff0a8;
+  --text-dark: #0a1628;
+  --text-muted: #5a6580;
+  --border: #dfe3ec;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-navy: #0a1628;
+  --color-navy-light: #132240;
+  --color-jboi-blue: #0059d5;
+  --color-jboi-blue-light: #3a85e8;
+  --color-jboi-yellow: #fed841;
+  --color-jboi-yellow-light: #fff0a8;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-pixel {
+  font-family: var(--font-pixel, Pixelify Sans);
 }
 
 body {
   background: var(--background);
-  color: black;
+  color: var(--foreground);
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
+/* Geometric grid pattern overlay */
+.geo-grid {
+  background-image:
+    linear-gradient(rgba(0, 89, 213, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 89, 213, 0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Diagonal stripe accent */
+.diagonal-accent {
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 8px,
+    rgba(254, 216, 65, 0.12) 8px,
+    rgba(254, 216, 65, 0.12) 16px
+  );
+}
+
+/* Animated gradient border */
+@keyframes borderGlow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Subtle float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+/* Yellow underline accent */
+.yellow-underline {
+  background-image: linear-gradient(transparent 60%, rgba(254, 216, 65, 0.4) 60%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Page header shared style */
+.page-header {
+  background: linear-gradient(135deg, #0a1628 0%, #132240 50%, #0059d5 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.page-header::after {
+  content: '';
+  position: absolute;
+  right: -80px;
+  top: -80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(254, 216, 65, 0.08);
+  filter: blur(40px);
+}
+

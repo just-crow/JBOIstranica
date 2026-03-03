@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, Silkscreen } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+export const pixelFont = Silkscreen({ subsets: ["latin"], weight: "400", variable: "--font-pixel" });
 
 export const metadata: Metadata = {
   title: "JBOI 2026 - Junior Balkan Olympiad in Informatics",
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${spaceGrotesk.className} ${pixelFont.variable} antialiased`}
       >
         {children}
       </body>
