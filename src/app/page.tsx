@@ -10,7 +10,7 @@ export default function Home() {
       <main className="min-h-screen">
 
         {/* Hero */}
-        <section id="home" className="relative bg-[url(/sebilj.jpeg)] bg-no-repeat bg-cover bg-center w-full h-screen">
+        <section id="home" className="relative bg-[url(/JBOI_Sarajevo_skyline.jpg)] bg-no-repeat bg-cover bg-center w-full h-screen">
           <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/75 to-navy/95"></div>
           <div className="absolute inset-0 geo-grid opacity-40"></div>
 
@@ -21,7 +21,7 @@ export default function Home() {
           <div className="relative z-10 h-full flex flex-col justify-center items-center px-8 text-center">
             <div className="max-w-5xl">
               <div className="mb-10 animate-float">
-                <Image src="/logo.svg" alt="JBOI Logo" width={120} height={120} className="mx-auto drop-shadow-2xl" />
+                <Image src="/logo.svg" alt="JBOI Logo" width={180} height={180} className="mx-auto drop-shadow-2xl" />
               </div>
 
               <div className="mb-4">
