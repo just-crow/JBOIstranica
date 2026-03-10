@@ -1,6 +1,16 @@
 import Navbar from '@/components/navbar'
 
 export default function SchedulePage() {
+    const scheduleItems = [
+        'Arrivals',
+        'Practice session & opening ceremony',
+        'Competition day 1',
+        'Full day excursion to Mostar',
+        'Competition day 2',
+        'Closing ceremony',
+        'Departures',
+    ]
+
     return (
         <>
             <Navbar />
@@ -17,50 +27,19 @@ export default function SchedulePage() {
                     <div className="absolute inset-0 geo-grid opacity-20"></div>
                     <div className="max-w-6xl mx-auto px-8 relative">
                         <div className="space-y-6">
-                            <div className="bg-white rounded-2xl p-8 md:p-10 border border-gray-100 hover:border-jboi-blue/20 transition-all duration-300 hover:shadow-lg group">
-                                <div className="flex items-center justify-between">
-                                    <div className="flex items-center gap-5">
-                                        <div className="w-14 h-14 rounded-xl bg-jboi-blue/10 flex items-center justify-center">
-                                            <span className="text-jboi-blue font-bold text-lg">01</span>
+                            {scheduleItems.map((item, index) => (
+                                <div key={item} className="bg-white rounded-2xl p-8 md:p-10 border border-gray-100 hover:border-jboi-blue/20 transition-all duration-300 hover:shadow-lg group">
+                                    <div className="flex items-center justify-between gap-4">
+                                        <div className="flex items-center gap-5">
+                                            <div className="w-14 h-14 rounded-xl bg-jboi-blue/10 flex items-center justify-center">
+                                                <span className="text-jboi-blue font-bold text-lg">{String(index + 1).padStart(2, '0')}</span>
+                                            </div>
+                                            <h2 className="text-2xl md:text-3xl font-bold text-navy">{item}</h2>
                                         </div>
-                                        <div>
-                                            <h2 className="text-2xl md:text-3xl font-bold text-navy">Friday, September 22</h2>
-                                            <p className="text-sm text-gray-500 mt-1">Arrival & Registration</p>
-                                        </div>
+                                        <span className="bg-jboi-blue text-white px-5 py-1.5 rounded-full font-semibold text-sm whitespace-nowrap">Day {index + 1}</span>
                                     </div>
-                                    <span className="bg-jboi-blue text-white px-5 py-1.5 rounded-full font-semibold text-sm">Day 1</span>
                                 </div>
-                            </div>
-
-                            <div className="bg-white rounded-2xl p-8 md:p-10 border border-gray-100 hover:border-jboi-yellow/30 transition-all duration-300 hover:shadow-lg group">
-                                <div className="flex items-center justify-between">
-                                    <div className="flex items-center gap-5">
-                                        <div className="w-14 h-14 rounded-xl bg-jboi-yellow/15 flex items-center justify-center">
-                                            <span className="text-jboi-yellow font-bold text-lg">02</span>
-                                        </div>
-                                        <div>
-                                            <h2 className="text-2xl md:text-3xl font-bold text-navy">Saturday, September 23</h2>
-                                            <p className="text-sm text-gray-500 mt-1">Competition Day 1</p>
-                                        </div>
-                                    </div>
-                                    <span className="bg-jboi-yellow text-navy px-5 py-1.5 rounded-full font-semibold text-sm">Day 2</span>
-                                </div>
-                            </div>
-
-                            <div className="bg-white rounded-2xl p-8 md:p-10 border border-gray-100 hover:border-navy/10 transition-all duration-300 hover:shadow-lg group">
-                                <div className="flex items-center justify-between">
-                                    <div className="flex items-center gap-5">
-                                        <div className="w-14 h-14 rounded-xl bg-navy/8 flex items-center justify-center">
-                                            <span className="text-navy font-bold text-lg">03</span>
-                                        </div>
-                                        <div>
-                                            <h2 className="text-2xl md:text-3xl font-bold text-navy">Sunday, September 24</h2>
-                                            <p className="text-sm text-gray-500 mt-1">Competition Day 2</p>
-                                        </div>
-                                    </div>
-                                    <span className="bg-navy text-white px-5 py-1.5 rounded-full font-semibold text-sm">Day 3</span>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </section>

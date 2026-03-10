@@ -17,16 +17,20 @@ export default function RulesPage() {
                     <div className="max-w-4xl mx-auto px-8">
                         <div className="flex items-center gap-3 mb-10">
                             <div className="w-10 h-1 bg-jboi-blue rounded-full"></div>
-                            <h2 className="text-3xl font-bold text-navy">Lorem Ipsum Rules</h2>
+                            <h2 className="text-3xl font-bold text-navy">Competition Rules (Summary)</h2>
                         </div>
 
                         <div className="space-y-4">
                             {[
-                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                                'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                                'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
-                                'Nisi ut aliquip ex ea commodo consequat.',
-                                'Duis aute irure dolor in reprehenderit in voluptate velit esse.',
+                                'Each regular participating country may enter a team of up to four secondary school contestants and two team leaders.',
+                                'The contest consists of two competition days; each day is a 4-hour round with algorithmic programming tasks.',
+                                'Official task statements are provided in English, with local-language translations coordinated by team leaders.',
+                                'Only the provided computers, software, and approved tools may be used during competition rounds.',
+                                'Solutions are submitted through the official grading system; scoring is based on test groups and subtasks.',
+                                'Time, memory, and source-size limits are enforced for each task as stated in the problem statements.',
+                                'During rounds, communication with other contestants and use of unauthorized devices/materials is strictly forbidden.',
+                                'In case of technical or grading concerns, clarifications and appeals must follow the official process and deadlines.',
+                                'Final rankings and medals are determined by the official scoring and JBOI medal allocation rules.',
                             ].map((rule, i) => (
                                 <div key={i} className="flex items-start gap-4 p-5 rounded-xl bg-[#f8f9fc] border border-gray-100 hover:border-jboi-blue/15 transition-all duration-200">
                                     <div className="w-8 h-8 rounded-lg bg-jboi-blue/10 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -36,6 +40,10 @@ export default function RulesPage() {
                                 </div>
                             ))}
                         </div>
+
+                        <p className="text-sm text-gray-500 mt-8">
+                            For complete and authoritative regulations, please refer to the official JBOI rulebook provided by the organizers.
+                        </p>
                     </div>
                 </section>
             </main>
